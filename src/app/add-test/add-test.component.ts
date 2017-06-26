@@ -8,36 +8,43 @@ import { AuthService } from '../service/auth.service';
   styleUrls: ['./add-test.component.css']
 })
 export class AddTestComponent implements OnInit {
+
 	title: String;
     status: String;
     assigned: String;
- 
 
   constructor( private router: Router , private authService: AuthService ) { }
 
   ngOnInit() {
   }
-  addNewTest(){
 
-  	 const test = {
-      title: this.title,
-      status: this.status,
-      assigned: this.assigned  
+  addNewTest(){ // function call when user signup..
+
+  	const test = {
+
+        title: this.title,
+        status: this.status,
+        assigned: this.assigned
+
         }
-        //console.log(test)
-         this.authService.addTestR(test).subscribe(data => {
-      if(data){ 
-       // console.log("data",data);
-        this.router.navigate(['/test']);
-      }else {
-        console.log("Title is used befor !!");
-       	this.router.navigate(['/addtest']);
-        
-      }
-    });
-  }
-  cancel(){
-  	this.router.navigate(['/test']);
-  }
 
+    this.authService.addTestR(test).subscribe(data => {
+
+        if(data){ //when signup done
+
+            this.router.navigate(['/test']);
+
+        }else {//if the signup faild
+
+            console.log("Title is used befor !!");
+       	    this.router.navigate(['/addtest']);  
+        }
+    });
+  }//end of addNewTest
+
+  cancel(){//cancel function..
+
+  	this.router.navigate(['/test']);
+  }//end of cancel function
+  
 }
