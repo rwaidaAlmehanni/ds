@@ -12,8 +12,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 -To start the task Run:
 
-Run `npm install` to install all package that project need
-Run `ng build` to build the project 
+Run `npm install` to install all package that project need ,
+
+Run `ng build` to build the project ,
+
 Run `node server/server.js` to run the project server
 
 Done by:
