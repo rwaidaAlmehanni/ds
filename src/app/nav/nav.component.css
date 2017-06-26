@@ -1,0 +1,91 @@
+.btn {
+  background-color: #3B5998;
+  width: 110px;
+  margin-top: 10px;
+  height: 30px;
+  line-height: 5px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #3B5998;
+}
+
+#b {
+  background-color: white;
+  color: #3B5998;
+  float: right;
+  margin-right: 10px;
+  margin-left: 970px;
+  margin-bottom: 2px;
+  margin-top: 10px;
+  padding: 12px 28px;
+}
+
+#b2{
+  background-color: white;
+  color: #3B5998;
+  float: right;
+  margin-right: 30px;
+  margin-left: 800px;
+  margin-bottom: 20px;
+  padding: 12px 28px;
+}
+
+#text{
+  color:white;
+  font-family: "italic", Georgia, Serif;
+  font-size: 250%;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.between {
+  border: 0.5px dashed #C71585;
+  margin-left: 100px;
+  margin-right: 10px;
+}
+
+#navbarCollapse {
+  float: right;
+  align: center;
+  margin-top: 3%;
+}
+
+.fm {
+  margin-right: 0px;
+}
+
+#d {
+  float: right;
+}
+
+#sign {
+  background-color:#3B5998;
+  border: white;
+}
+
+p {
+  left: 20%;
+  color: white;
+}
+
+#last {
+  left: 30%;
+}
+
+.navbar-header {
+  border: 0 !important;
+  
+  color: #333 !important;
+ 
+  box-shadow: none !important;
+  background-color:#3B5998;
+}
+
+.navbar-default {
+  border: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+  background-color: #3B5998;
+  border-color: none;
+}

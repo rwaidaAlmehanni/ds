@@ -1,0 +1,27 @@
+<!-- <popup #popup1>
+    Add your custom html elements here
+    <br>
+</popup> -->
+<div class="container">
+<button class="btn" (click)="newTest()">Add new test</button>
+  <h2>All Tests in the System*</h2>
+  <hr>
+  <p>you can add new test to the system by clicking in the add button :)</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Titel</th>
+        <th>Start_Date</th>
+        <th>Status</th>
+        <th>Assigned</th>
+      </tr>
+    </thead>
+     <tr *ngFor="let test of allTests">
+        <td><strong >{{ test.title }}</strong></td>
+        <td>{{ test.start_date }}</td>
+        <td>{{ test.status }}</td>
+        <td>{{ test.assigned }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
