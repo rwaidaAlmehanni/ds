@@ -14,9 +14,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `npm install` to install all package that project need ,
 
-Run `ng build` to build the project ,
+Run `mongod` in one terminal window,
 
-Run `node server/server.js` to run the project server
+Run `npm run build` to build the project & the server ,
+
 
 Done by:
 Rwaida Almehanni
