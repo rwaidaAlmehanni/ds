@@ -9,7 +9,7 @@ require('./config/middleware.js') (app,express); //connect to middleware functio
 require('./config/routes.js') (app,express); //connect to routes 
 
 /////////////////////database//////////////////////////
-var mongoURI = process.env.MONGODB_URI ||'mongodb://localhost/To_DoDB';
+var mongoURI = process.env.MONGOLAB_URI ||'mongodb://localhost/To_DoDB';
   mongoose.Promise = global.Promise;
 mongoose.connect(mongoURI);
 db = mongoose.connection;
